@@ -29,7 +29,7 @@ print(df.isnull().sum())
 # Thickness of skin
 # Insulin level
 # BMI
-# Diabetes Pedigree Function = statistical risk based on family history
+# Diabetes Pedigree Function = statistical risk of type 2 diabetes based on family history
 # Age
 # Outcome (1 = diabetes, 0 = no diabetes)
 print(df.columns)
