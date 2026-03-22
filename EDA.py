@@ -1,0 +1,38 @@
+"""Exploratory Data Analysis File"""
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import warnings as wr
+import kagglehub
+
+# cleaner output
+wr.filterwarnings('ignore')
+
+# Download latest version
+df = pd.read_csv('diabetes.csv')
+
+# 768 entries, 9 traits
+print(df.shape)
+
+# entries are either floats or ins
+print(df.info())
+
+# no null entries
+print(df.isnull().sum())
+
+# Traits:
+# Number of Pregnancies
+# Glucose level
+# Blood pressure
+# Thickness of skin
+# Insulin level
+# BMI
+# Diabetes Pedigree Function = statistical risk based on family history
+# Age
+# Outcome (1 = diabetes, 0 = no diabetes)
+print(df.columns)
+
+# outcomes are either 0 or 1
+print(df.nunique())
