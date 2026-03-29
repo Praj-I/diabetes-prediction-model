@@ -1,11 +1,7 @@
 """Exploratory Data Analysis File"""
 
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 import warnings as wr
-import kagglehub
 
 # cleaner output
 wr.filterwarnings('ignore')
@@ -36,3 +32,6 @@ print(df.columns)
 
 # outcomes are either 0 or 1
 print(df.nunique())
+
+# Correlation matrix
+print(df.corr())
